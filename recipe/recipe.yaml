@@ -25,9 +25,7 @@ requirements:
     - python >=${{ python_min }}
     - trame-client >=3.10
     - loguru
-    {% if python_version == "3.13" %}
-    - typing_extensions
-    {% endif %}
+    - typing_extensions # [py==313]
 
 tests:
   - python:
