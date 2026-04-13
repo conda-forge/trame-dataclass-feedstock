@@ -25,7 +25,9 @@ requirements:
     - python >=${{ python_min }}
     - trame-client >=3.10
     - loguru
-    - typing_extensions # [py==313]
+    - if: match(python, "==3.13")
+        then:
+        - typing_extensions
 
 tests:
   - python:
