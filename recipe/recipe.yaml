@@ -12,7 +12,7 @@ source:
   sha256: 774554ad955998d3ad7a887e2851d433a054171294953a23a166eb083fe768d3
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -25,6 +25,9 @@ requirements:
     - python >=${{ python_min }}
     - trame-client >=3.10
     - loguru
+    - if: match(python, "==3.13")
+        then:
+        - typing_extensions
 
 tests:
   - python:
