@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "2.1.1"
+  version: "2.1.2"
 
 package:
   name: trame-dataclass
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/trame-dataclass/trame_dataclass-${{ version }}.tar.gz
-  sha256: 0eaa920722e93fb3e5f5f75d849515e6f54aaca0328b0fb6d73ebed9c8f4c7da
+  sha256: f1233638c00a4265e354c58d10877c84c3bb7bf880ab108b97c4b2ee5dac8677
 
 build:
   number: 0
